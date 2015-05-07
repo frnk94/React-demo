@@ -62,7 +62,7 @@ AppDispatcher.register(function (action){
 			break;
 
 		case AppConstants.COMMENTS.CREATE:
-			CommentsStore.populate(action.comment);
+			CommentsStore.populate(action.chatMsg);
 			CommentsStore.emitChange();
 			break;
 	}
