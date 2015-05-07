@@ -1,26 +1,28 @@
 "use strict";
 
 var express = require('express');
+var app = express();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 var config = require('./config');
-var bodyParser = require('body-parser');
 var path = require('path');
 
-var app = express();
 app.set('port', process.env.PORT || config.port);
 app.set('view engine', 'jade');
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app midleware
-app.use(function(req, res, next) {
-	res.locals.baseUri = config.uri;
-	res.locals._ = require('underscore');
-	next();
+io.on('connection', function(socket){
+  socket.on('chat message', function(comment){
+  	io.emit('chat message', comment);
+  });
 });
 
-//start the server
-app.listen(app.get('port'), function() {
+/*
+/*	Lab #1: We need to start the HTTP server and serve a static page
+*/
+//--START--//
+
+http.listen(app.get('port'), function() {
 	config.logger.info("Express Rest server listening on port " + app.get('port'));
 });
 
@@ -28,4 +30,5 @@ app.get('/', function (req, res) {
 	res.render('app');
 });
 
+//--END--//
 module.exports = app;
