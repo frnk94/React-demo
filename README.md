@@ -7,9 +7,7 @@ voici les procédure d'installation de ma démo React
 + cd ./demo-react/www
 + sudo npm install gulp -g
 + sudo npm install forever -g
-+ sudo npm install bower -g
 + sudo npm install
-+ bower install
 
 ## utilisation
 + npm run watch
