@@ -9,4 +9,5 @@ voici les procédure d'installation de ma démo React
 
 ## utilisation
 + npm run watch
-> cette commande lance un script qui par le serveur et qui compile notre javascript
+
+> cette commande lance un script qui par le serveur et qui compile notre javascrip
