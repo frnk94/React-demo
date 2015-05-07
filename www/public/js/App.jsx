@@ -1,12 +1,15 @@
 "use strict";
 var React = require('react');
 
+//components
+var Header = require('./views/layout/Header.jsx');
+
 var App = React.createClass({
 	render: function() {
 		return (
-			<div className='jumbotron'>
-				<h1>Welcome to Demo-react</h1>
-			</div>
+			<Header>
+
+			</Header>
 		);
 	},
 });
