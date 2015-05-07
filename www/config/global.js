@@ -2,7 +2,7 @@
 
 var bunyan = require('bunyan');
 var logger = bunyan.createLogger({
-    name: "all",
+   name: "all",
     streams: [
         {
             stream: process.stdout,

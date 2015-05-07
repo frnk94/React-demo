@@ -5,7 +5,10 @@ Démo pour le seminaire des sujets avancés
 voici les procédure d'installation de ma démo React
 + git clone git@github.com:frnk94/demo-react.git
 + cd ./demo-react/www
-+ (sudo) npm install
++ sudo npm install gulp -g
++ sudo npm install forever -g
++ sudo npm install bower -g
++ sudo npm install
 
 ## utilisation
 + npm run watch

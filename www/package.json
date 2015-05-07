@@ -4,7 +4,8 @@
   "description": "Démo pour le seminaire des sujets avancés",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js | node ./node_modules/bunyan/bin/bunyan -o short -L",
+    "watch": "forever -w index.js | node ./node_modules/bunyan/bin/bunyan -o short -L & gulp"
   },
   "repository": {
     "type": "git",

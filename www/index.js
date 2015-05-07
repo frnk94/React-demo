@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 
 //start the server
 app.listen(app.get('port'), function() {
-	console.log("Express Rest server listening on port " + app.get('port'));
+	config.logger.info("Express Rest server listening on port " + app.get('port'));
 });
 
 app.get('/', function (req, res) {
