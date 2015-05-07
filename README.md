@@ -9,6 +9,7 @@ voici les procédure d'installation de ma démo React
 + sudo npm install forever -g
 + sudo npm install bower -g
 + sudo npm install
++ bower install
 
 ## utilisation
 + npm run watch
