@@ -4,7 +4,7 @@ var React = require('react');
 //components
 var Navbar = require('./Navbar.jsx');
 
-var Header = React.createClass({
+var BodyWrapper = React.createClass({
 	render: function() {
 		return (
 			<div>
@@ -16,4 +16,4 @@ var Header = React.createClass({
 		);
 	}
 });
-module.exports = Header;
+module.exports = BodyWrapper;

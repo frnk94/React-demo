@@ -2,14 +2,15 @@
 var React = require('react');
 
 //components
-var Header = require('./views/layout/Header.jsx');
+var BodyWrapper = require('./views/layouts/BodyWrapper.jsx');
+
 
 var App = React.createClass({
 	render: function() {
 		return (
-			<Header>
+			<BodyWrapper>
 
-			</Header>
+			</BodyWrapper>
 		);
 	},
 });
