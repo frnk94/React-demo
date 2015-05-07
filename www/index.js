@@ -1,11 +1,12 @@
 "use strict";
 
 var express = require('express');
+var config = require('./config');
 var bodyParser = require('body-parser');
 var path = require('path');
 
 var app = express();
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || config.port);
 app.set('view engine', 'jade');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,7 +25,7 @@ app.listen(app.get('port'), function() {
 });
 
 app.get('/', function (req, res) {
-	res.render('index', { title: 'Hey', message: 'Hello there!'});
+	res.render('app');
 });
 
 module.exports = app;
