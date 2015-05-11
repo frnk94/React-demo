@@ -12,9 +12,7 @@ app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(comment){
-  	io.emit('chat message', comment);
-  });
+	//Lab #4: Handle chat message then broadcast it.
 });
 
 /*
