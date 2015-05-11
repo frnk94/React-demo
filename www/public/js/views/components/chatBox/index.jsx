@@ -18,7 +18,9 @@ function getChatBoxState() {
 	};
 }
 
+
 //Lab #2: completed this react class
+
 var ChatBox = React.createClass({
 	getInitialState: function() {
 		return getChatBoxState();
