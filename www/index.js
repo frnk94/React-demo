@@ -22,13 +22,7 @@ io.on('connection', function(socket){
 */
 //--START--//
 
-http.listen(app.get('port'), function() {
-	config.logger.info("Express Rest server listening on port " + app.get('port'));
-});
 
-app.get('/', function (req, res) {
-	res.render('app');
-});
 
 //--END--//
 module.exports = app;
