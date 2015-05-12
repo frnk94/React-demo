@@ -12,9 +12,7 @@ app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(comment){
-  	io.emit('chat message', comment);
-  });
+	//Lab #4: Handle chat message then broadcast it.
 });
 
 /*
@@ -22,13 +20,7 @@ io.on('connection', function(socket){
 */
 //--START--//
 
-http.listen(app.get('port'), function() {
-	config.logger.info("Express Rest server listening on port " + app.get('port'));
-});
 
-app.get('/', function (req, res) {
-	res.render('app');
-});
 
 //--END--//
 module.exports = app;
