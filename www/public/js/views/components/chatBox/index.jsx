@@ -34,13 +34,18 @@ var ChatBox = React.createClass({
 	_onChange: function() {
 
 	},
+	//autoscroll after update
+	componentDidUpdate: function() {
+		var commentList = React.findDOMNode(this.refs.commentList);
+		commentList.scrollTop = commentList.scrollHeight;
+	},
 	_onCommentSubmit: function(comment) {
 
 	},
 	render: function() {
 		return (
 			<PanelWhite title='Chat box'>
-				<ol className="discussion">
+				<ol ref='commentList' className="discussion">
 
 				</ol>
 				<MessageBar currentUser={this.props.currentUser} onSubmit={this._onCommentSubmit} />
