@@ -14,23 +14,3 @@ $ sudo npm install
 ## utilisation
 `$ npm run watch `
 > cette commande lance un script qui part le serveur et qui compile notre javascript
-<<<<<<< HEAD
-=======
-
-## Labs
-
-### 1.
-Ce lab vous apprendera a utilisé le populaire framework Express.
-Nous utiliseron Express pour mettre en place le serveur HTTP.
-
-### 2.
-Ce lab vous apprendera a utilisé le populaire framework React.
-
-### 3.
-Ce lab vous apprendera a utilisé le populaire framework Socket.io.
-Nous utiliseron Socket.io pour envoyer les messages a tous les clients.
-
-### 4.
-Ce lab vous apprendera a utilisé le populaire framework Socket.io.
-Nous utiliseron Socket.io pour envoyer les messages a tous les clients.
->>>>>>> f199a1b19a03e66678e5fc8d0433fd75adf6e97c
