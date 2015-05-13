@@ -9,6 +9,7 @@ Npm est le gestionnaire de paquets (package manager) de Node.js. Une fois Node.j
 
 __Commandes:
 
+| Commandes            | Resultat                                                                             |
 |----------------------|--------------------------------------------------------------------------------------|
 | `npm init`           | Cette commande créer un fichier de configuration pour le projet (package.json).      |
 | npm install          | Cette commande sert a installer un ou des package(s)                                 |
