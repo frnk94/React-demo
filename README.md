@@ -9,12 +9,12 @@ Npm est le gestionnaire de paquets (package manager) de Node.js. Une fois Node.j
 
 __Commandes:
 
-| Commandes            | Resultat                                                                             |
-|----------------------|--------------------------------------------------------------------------------------|
-| `npm init`           | Cette commande créer un fichier de configuration pour le projet (package.json).      |
-| npm install          | Cette commande sert a installer un ou des package(s)                                 |
-| npm remove <package> | Cette commande permet de supprimer un package.                                       |
-| npm update           | Cette commande met a jour les packages                                               |
+| Commandes              | Resultat                                                                             |
+|------------------------|--------------------------------------------------------------------------------------|
+| `npm init`             | Cette commande créer un fichier de configuration pour le projet (package.json).      |
+| `npm install`          | Cette commande sert a installer un ou des package(s)                                 |
+| `npm remove <package>` | Cette commande permet de supprimer un package.                                       |
+| `npm update`           | Cette commande met a jour les packages                                               |
 
 ## Avant-propos
 Ce laboratoire a pour but de vous familliariser avec le developpement web Javascript. Vous apprendrez comment lancer un serveur Nodejs qui sert une page http. Le reste du laboratoire est dédier au développement javascript client (frontend). Vous aprrendrez à utiliser la populaire librairie React pour créer des composante qui représenteron les `vues` de votre application. Ce laboratoire À la fin de ce laboratoire vous serez capable d' utiliser nodejs pour déployer rapidement des application web javascript.
