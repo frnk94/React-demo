@@ -7,8 +7,6 @@ Node.js® est une plateforme bâtie sur le moteur JavaScript de Google Chrome(V8
 ## 1.1 Qu’est-ce que Npm ?
 Npm est le gestionnaire de paquets (package manager) de Node.js. Une fois Node.js installé, celui-ci est accessible via un `CLI` (interface en ligne de commande) et il permet d’ajouter des librairies à notre application.
 
-__Commandes:
-
 | Commandes              | Resultat                                                                             |
 |------------------------|--------------------------------------------------------------------------------------|
 | `npm init`             | Cette commande créer un fichier de configuration pour le projet (package.json).      |
